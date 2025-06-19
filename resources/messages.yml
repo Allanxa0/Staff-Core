@@ -1,0 +1,52 @@
+# ------------------------------------ #
+#        Mensajes de StaffCore         #
+# ------------------------------------ #
+# Todas las variables disponibles se indican en cada sección.
+
+# El prefijo que se usará en la mayoría de los mensajes.
+prefix: "§c§lStaffCore §8»§r "
+
+# Mensajes Generales
+player_not_found: "{prefix}§cEl jugador '{target}' no está en línea."
+player_not_banned: "{prefix}§cEl jugador '{target}' no está baneado."
+
+# ---- Modo Staff (/mod) ---- #
+staff_mode_on: "{prefix}§aModo Staff activado."
+staff_mode_off: "{prefix}§cModo Staff desactivado."
+staff_mode_join_notification: "{prefix}§eEres Staff. ¡Usa §a/mod§e para activar tus herramientas!"
+
+# ---- Vanish ---- #
+vanish_on: "{prefix}§aVisibilidad desactivada (Vanish ON)."
+vanish_off: "{prefix}§cVisibilidad activada (Vanish OFF)."
+# Nombres de los items de vanish
+vanish_item_on_name: "§r§2Visibilidad: §aActivada §7(Interactuar)"
+vanish_item_off_name: "§r§2Visibilidad: §cDesactivada §7(Interactuar)"
+
+# ---- Congelar (Freeze) ---- #
+freeze_target: "{prefix}§bHas congelado a §e{target}§b."
+unfreeze_target: "{prefix}§aHas descongelado a §e{target}§a."
+freeze_target_message_title: "§b§l¡HAS SIDO CONGELADO!"
+freeze_target_message_subtitle: "§7No te desconectes. Sigue las instrucciones del Staff."
+unfreeze_target_message: "{prefix}§aHas sido descongelado."
+freeze_move_warning_title: "§c¡No te muevas!"
+freeze_move_warning_subtitle: "§cEstás congelado. Podrías ser sancionado."
+freeze_disconnect_ban_message: "{prefix}§c{player} ha sido baneado por {days} días por desconectarse mientras estaba congelado."
+
+# ---- Sanciones (Ban/Unban) ---- #
+ban_kick_message: "§c§lHAS SIDO BANEADO\n§r§fRazón: §e{reason}\n§r§fDuración: §e{time}"
+ban_broadcast: "{prefix}§e{target}§c ha sido baneado por §e{staff}§c. Razón: §e{reason}§c."
+unban_name_not_provided: "{prefix}§cDebes proporcionar un nombre de jugador."
+unban_success: "{prefix}§aHas desbaneado a §e{target}§a exitosamente."
+unban_broadcast: "{prefix}§e{target}§a ha sido desbaneado por §e{staff}§a."
+ban_type_normal: "Normal"
+ban_type_ip: "IP"
+duration_permanent: "Permanente"
+
+# ---- Chat de Staff y Congelación ---- #
+staff_chat_usage: "{prefix}§cUso: /sc <mensaje>"
+freeze_chat_header: "{prefix}§bAhora estás en el chat privado con el Staff. Explica tu situación."
+
+# ---- Herramientas de Staff ---- #
+teleporter_random_success: "{prefix}§aTe has teletransportado a §e{target}§a."
+teleporter_no_players: "{prefix}§cNo hay otros jugadores a los que teletransportarse."
+
