@@ -1,0 +1,65 @@
+# ------------------------------------ #
+#       Configuración de StaffCore     #
+# ------------------------------------ #
+
+# URL del Webhook de Discord para enviar notificaciones de sanciones.
+# Déjalo en blanco para desactivar esta función.
+discord_webhook_url: ""
+
+# Configuración del baneo por desconexión al estar congelado.
+freeze_disconnect_ban:
+  # ¿Se debe banear al jugador si se desconecta mientras está congelado?
+  enabled: true
+  # Duración del baneo en días.
+  days: 30
+
+# Comandos bloqueados mientras un jugador está congelado.
+# Añade cualquier comando (sin la barra "/") que quieras bloquear.
+blocked_commands_on_freeze:
+  - "spawn"
+  - "home"
+  - "tpa"
+  - "warp"
+
+# ---- Características del Modo Staff ---- #
+staff_mode:
+  # ¿El staff entra en modo vanish automáticamente al activar /mod?
+  vanish_on_enable: true
+
+  # Items que se entregan al entrar en modo staff.
+  # Puedes cambiar el slot (de 0 a 8) y el nombre de cada item.
+  items:
+    teleporter:
+      slot: 0
+      name: "§r§aTeletransportador §7(Interactuar)"
+      lore: "§r§7Click Derecho: TP Aleatorio\n§r§7Click Izquierdo: Atravesar"
+    freeze:
+      slot: 1
+      name: "§r§bCongelador de Jugadores §7(Golpear)"
+    inventory_viewer:
+      slot: 2
+      name: "§r§eInspector de Inventario §7(Golpear)"
+    player_info:
+      slot: 3
+      name: "§r§6Información del Jugador §7(Golpear)"
+    ban_tool:
+      slot: 7
+      name: "§r§cHerramienta de Sanción §7(Golpear)"
+    vanish:
+      slot: 8
+      # Los nombres para el estado de vanish se configuran en messages.yml
+      # Este es el nombre base.
+      name: "§r§2Visibilidad"
+
+# ---- Módulo de Chat de Staff (/sc) ---- #
+staff_chat:
+  # Formato del mensaje que se mostrará en el chat de staff.
+  # Variables disponibles: {player}, {message}
+  format: "§8[§cStaffChat§8] §7{player}: §e{message}"
+
+# ---- Módulo de Chat de Congelación ---- #
+freeze_chat:
+  # Formato del mensaje en el chat privado de congelación.
+  # Variables disponibles: {player}, {message}
+  format: "§8[§bFreezeChat§8] §7{player}: §f{message}"
+
