@@ -1,0 +1,55 @@
+name: StaffCore
+main: StaffCore\Main
+version: 2.0.0
+api: 5.0.0
+author: Allanxa0
+description: Un completo conjunto de herramientas para la moderación y gestión del staff.
+
+permissions:
+  staffcore:
+    description: Permiso base para StaffCore.
+    default: op
+
+  staffcore.command.mod:
+    description: Permite usar el comando /mod para entrar en modo staff.
+    default: op
+
+  staffcore.command.unban:
+    description: Permite usar el comando /unban.
+    default: op
+
+  staffcore.command.staffchat:
+    description: Permite usar y ver el chat de staff (/sc).
+    default: op
+
+  staffcore.feature.vanish.see:
+    description: Permite ver a otros jugadores en modo vanish.
+    default: op
+
+  staffcore.feature.invsee:
+    description: Permite usar la herramienta para ver inventarios.
+    default: op
+
+  staffcore.feature.playerinfo:
+    description: Permite usar la herramienta de información del jugador.
+    default: op
+
+  staffcore.feature.banui:
+    description: Permite usar la herramienta de baneo.
+    default: op
+
+  staffcore.feature.freeze:
+    description: Permite usar la herramienta para congelar jugadores.
+    default: op
+
+  staffcore.bypass.freeze:
+    description: Evita que este jugador pueda ser congelado.
+    default: op
+
+  staffcore.chat.freeze:
+    description: Permite ver y participar en el chat de un jugador congelado.
+    default: op
+
+  staffcore.onjoin.message:
+    description: Recibe el mensaje de bienvenida para activar el modo staff.
+    default: op
